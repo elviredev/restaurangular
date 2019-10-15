@@ -1,0 +1,8 @@
+
+<app-phone [user]="standard" (zoom)="displayBig($event)"></app-phone> 
+<hr>
+<app-phone [user]="sommelier" (zoom)="displayBig($event)"></app-phone> 
+<hr>
+<app-phone [user]="patissier" (zoom)="displayBig($event)"></app-phone> 
+
+<div class="phone" *ngIf="numberToDisplay">{{ numberToDisplay }}</div>

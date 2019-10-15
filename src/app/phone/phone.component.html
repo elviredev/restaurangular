@@ -1,0 +1,12 @@
+<h3> {{ user.role }}</h3>
+<div>
+  {{ user.firstName }} {{ user.lastName }} 
+</div>
+
+<!-- on affiche uniquement ce div si l'employé a obtenu une récompense -->
+<div *ngIf="user.award !== ''"> 
+  récompense : {{ user.award }}
+</div>
+<div>
+  tel : {{ user.phoneNumber }} <button (click)="displayNumber()">Zoom</button>
+</div>
